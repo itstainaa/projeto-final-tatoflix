@@ -1,13 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>tatoflix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tatiflix - Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>catálogo</h1>
-        <p>melhores filmes dentro do meu mundo</p>    
+
+    <!-- Cabeçalho do Site -->
+    <header>
+        <h1>tatoflix</h1>
+        <p>Bem-vindo ao seu site de loucuras</p>
+        <!-- Barra de Pesquisa -->
+        <input type="text" id="searchInput" placeholder="Buscar filmes e séries..." onkeyup="searchMovies()">
+    </header>
+
+    <!-- Barra de Navegação -->
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="categorias.html">Categorias</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <h2>Últimos Lançamentos</h2>
+        <div class="movie-list" id="movieList">
+            <!-- Card do Filme 1 -->
+            <div class="movie-item">
+                <img src="https://via.placeholder.com/200x300" alt="Poster do Filme 1">
+                <h3>Velozes e furiosos 5</h3>
+                <p>Ação</p>
+                <p>2011</p>
+            </div>
+            <!-- Card do Filme 2 -->
+            <div class="movie-item">
+                <img src="https://via.placeholder.com/200x300" alt="Poster do Filme 2">
+                <h3>Moana</h3>
+                <p>Aventura</p>
+                <p>2016</p>
+            </div>
+            <!-- Card do Filme 3 -->
+            <div class="movie-item">
+                <img src="https://via.placeholder.com/200x300" alt="Poster do Série 1">
+                <h3>Teen Wolf</h3>
+                <p> Drama</p>
+                <p>5ª Temporadas</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2023 Cine&Séries. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
